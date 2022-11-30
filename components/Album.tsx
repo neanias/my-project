@@ -15,7 +15,7 @@ export default function Album(
       <div class="rounded-lg shadow-md bg(white dark:gray-700) max-w-sm">
         <img class="rounded-t-lg" src={coverArt} loading="lazy" alt={`${name} album cover art`} />
         <div class="p-6">
-          <h5 class="text(gray-900 dark:gray-50) text-xl font-medium mb-2">
+          <h5 class="text(gray-900 dark:gray-50) text-xl font-bold mb-2">
             <a
               class="hover:underline hover:text-blue-700"
               href={album.external_urls.spotify}
