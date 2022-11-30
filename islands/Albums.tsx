@@ -39,7 +39,7 @@ export default function Albums(props: AlbumsProps) {
               <header class="text-3xl text-center font-bold mt-0 mb-6">
                 {year}
               </header>
-              <main class="grid grid-cols-1 gap-3 md:grid-cols-5 xl:grid-cols-7 content-evenly">
+              <main class="grid grid(2xl:cols-7 lg:cols-5 md:cols-3 cols-1) gap-3 content-evenly">
                 {albums.map((album: SpotifyApi.AlbumObjectFull) => (
                   <Album
                     album={album}
