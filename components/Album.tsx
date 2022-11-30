@@ -17,7 +17,7 @@ export default function Album(
         <div class="p-6">
           <h5 class="text(gray-900 dark:gray-50) text-xl font-bold mb-2">
             <a
-              class="hover:underline hover:text-blue-700"
+              class="hover:underline text(hover:blue-700 hover:dark:blue-300)"
               href={album.external_urls.spotify}
             >
               {name}
