@@ -1,9 +1,5 @@
 import { encode } from "https://deno.land/std@0.160.0/encoding/base64.ts";
-import {
-  deleteCookie,
-  getCookies,
-  setCookie,
-} from "https://deno.land/std@0.165.0/http/cookie.ts";
+import { deleteCookie, getCookies, setCookie } from "https://deno.land/std@0.165.0/http/cookie.ts";
 import { Handlers } from "$fresh/server.ts";
 import config from "../config.ts";
 
@@ -50,8 +46,7 @@ export const handler: Handlers = {
         params = new URLSearchParams({ error: "invalid_token" });
       }
 
-      const { access_token, refresh_token }: Record<string, string> =
-        await response.json();
+      const { access_token, refresh_token }: Record<string, string> = await response.json();
       setCookie(headers, {
         name: "access_token",
         value: access_token,

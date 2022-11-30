@@ -9,5 +9,20 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
+  },
+  "lint": {
+    "rules": {
+      "include": [
+        "eqeqeq",
+        "no-const-assign"
+      ]
+    }
+  },
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 100,
+      "indentWidth": 2
+    }
   }
 }
