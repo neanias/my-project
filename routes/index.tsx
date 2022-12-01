@@ -36,7 +36,7 @@ export default function Home({ data }: PageProps<Tokens | null>) {
         <title>Spotify Albums by Release Date</title>
       </Head>
       <div class="dark:text-white">
-        <h1 class="text-5xl text-center font-bold">
+        <h1 class="text-5xl text-center font-bold mb-4">
           Spotify Albums by Release Date
         </h1>
         {loggedIn
